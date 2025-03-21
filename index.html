@@ -1,74 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <title>Jewellery Store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jewellery Store</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
 
-    <header id="headpart">
-       <div class="s1">
-            <img src="./images/logo.png" alt="Logo">
-            <h2>Sachin</h2>
-       </div>
-       <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Jewellery</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-            <img src="images/cart.png" alt="Shopping Cart">
-            <img src="images/search-icon.png" alt="Search Icon">
-       </nav>
-    </header>
+  <!-- Header Section -->
+  <header id="headpart">
+    <div class="s1">
+      <img src="./images/logo.png" alt="Jewellery Store Logo" />
+      <h2>Sachin</h2>
+    </div>
 
-    <main>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Jewellery</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <img src="images/cart.png" alt="Shopping Cart" class="nav-icon" />
+      <img src="images/search-icon.png" alt="Search Icon" class="nav-icon" />
+    </nav>
+  </header>
 
-        <!-- <div class="bgi">
-            <img src="./images/hero-bg.png" alt="Hero Background">
-        </div> -->
+  <!-- Main Content -->
+  <main>
 
-        <section id="sm1">
-             <div class="bgi">
-            <img src="./images/hero-bg.png" alt="Hero Background">
-        </div> 
+    <!-- Hero Section -->
+    <section id="sm1">
+      <div class="bgi">
+        <img src="./images/hero-bg.png" alt="Hero Background" />
+      </div>
 
-            <div class="detail_box">
-                <h2><span>New Collection</span></h2>
-                <h1>Jewellery</h1>
-                <p>Discover our latest collection of elegant and timeless jewellery pieces.</p>
-                <a href="#" class="shop-button">Shop Now</a>
-            </div>
+      <div class="detail_box">
+        <h2><span>New Collection</span></h2>
+        <h1>Jewellery</h1>
+        <p>Discover our latest collection of elegant and timeless jewellery pieces.</p>
+        <a href="#" class="shop-button">Shop Now</a>
+      </div>
 
-            <div id="logo2">
-                <img src="./images/slider-img.png" alt="Slider Image">
-            </div>
-        </section>
+      <div id="logo2">
+        <img src="./images/slider-img.png" alt="Featured Jewellery" />
+      </div>
+    </section>
 
-        <section id="sm2">
-            <div class="page2">
-                <div class="a1">
-                    
-<h6>Best PRISE</h6>
-<h5>Bracelate</h5>
-<img src="./images/i-1.png" alt="">
+    <!-- Products Section -->
+    <section id="page2">
+      <div id="r1">
+        <div class="m">
+          <h5 class="h">BEST PRICE</h5>
+          <img class="ii" src="./images/i-1.png" alt="Bracelet" />
+          <h6 class="h6">Bracelet</h6>
+        </div>
+        <div class="m">
+          <h5 class="h">BEST PRICE</h5>
+          <img class="ii" src="./images/i-2.png" alt="Ring" />
+          <h6 class="h6">Ring</h6>
+        </div>
+        <div class="m">
+          <h5 class="h">BEST PRICE</h5>
+          <img class="ii" src="./images/i-3.png" alt="Earrings" />
+          <h6 class="h6">Earrings</h6>
+        </div>
+      </div>
+    </section>
 
-                </div>
-            
-                <div class="b2"></div>
-                <div class="c3"></div>
+    <!-- About Section -->
+    <section id="page3">
+      <div class="p3">
+        <h2 class="about">About Jewellery Shop</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Libero perferendis illum labore ducimus, rerum nihil.<br>
+          Rem facilis nulla maiores earum pariatur.<br>
+          Ipsam, enim delectus odit dignissimos iusto ratione.<br>
+        </p>
+        <a href="#" class="read">Read More</a>
+      </div>
 
-            </div>
+      <div class="i1">
+        <img src="./images/about-img.png" alt="About Us Image" />
+      </div>
+    </section>
 
-        </section>
-        
-    </main>
+    <!-- Products Price Section -->
+    <section id="page4">
+      
+      <div class="jn">
+        <div class="price">
+          <h1>Our Jewellery Price</h1>
+        </div>
+
+        <div class="jp">
+          <div class="d2">
+            <h6 class="a1">Diamond Ring</h6>
+            <img class="r2" src="./images/p-1.png" alt="Diamond Ring" />
+            <h1 class="r3">$1000.00</h1>
+            <a href="#" class="r4">Buy Now</a>
+          </div>
+
+          <div class="d2">
+            <h6 class="a1">Golden Ring</h6>
+            <img class="r2" src="./images/i-2.png" alt="Golden Ring" />
+            <h1 class="r3">$850.00</h1>
+            <a href="#" class="r4">Buy Now</a>
+          </div>
+
+          <div class="d2">
+            <h6 class="a1">Earrings</h6>
+            <img class="r2" src="./images/i-3.png" alt="Earrings" />
+            <h1 class="r3">$620.00</h1>
+            <a href="#" class="r4">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="see-more-container">
+        <a href="#" class="see">See More</a>
+      </div>
+
+    </section>
+<section id="page5">
+  <div></div>
+</section>
+  </main>
 
 </body>
 </html>

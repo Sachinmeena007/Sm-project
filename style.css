@@ -1,92 +1,210 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-#headpart {
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* ===== HEADER ===== */
+  #headpart {
     position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-
+    padding: 15px 40px;
+    background-color: #222;
+    color: white;
     z-index: 1000;
-}
-
-.s1 {
+  }
+  
+  .s1 {
     display: flex;
     align-items: center;
-    gap: 6px;
-}
-
-.s1 img {
-    width: 35px;
-    height: 30px;
-}
-
-.s1 h2 {
+    gap: 10px;
+  }
+  
+  .s1 img {
+    width: 40px;
+    height: 35px;
+  }
+  
+  .s1 h2 {
     font-weight: bold;
-}
-
-#headpart nav {
+    font-size: 24px;
+    color: #f7a902ef;
+  }
+  
+  #headpart nav {
     display: flex;
     align-items: center;
-    gap: 40px;
-}
-
-#headpart nav ul {
+    gap: 25px;
+  }
+  
+  #headpart nav ul {
     display: flex;
     list-style: none;
-    gap: 40px;
-}
-
-#headpart nav ul li a {
+    gap: 25px;
+  }
+  
+  #headpart nav ul li a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     color: white;
-}
-
-
-
-#sm1 {
+    transition: 0.3s;
+  }
+  
+  #headpart nav ul li a:hover {
+    color: #f7c202;
+    font-size: 19px;
+  }
+  
+  #headpart nav img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  #sm1 {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ensuring it takes full viewport height */
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    overflow: hidden; /* Prevents overlap */
-}
+    padding: 0 50px;
+    overflow: hidden;
+    background-color: #dff7022d;
 
-.bgi {
+  }
+  
+  .bgi {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-}
-
-.bgi img {
+  }
+  
+  .bgi img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-#sm1 h1 {
-    font-size: 5rem;
-    box-shadow: 10px;
-    font-weight: bold;
+  }
+  
+  .detail_box {
+    max-width: 500px;
+    color: #181717;
+  }
+  
+  .detail_box h2 span {
+    font-size: 2rem;
+    color: orange;
+  }
+  
+  .detail_box h1 {
+    font-size: 4rem;
     text-transform: uppercase;
-    
-}
+    margin: 10px 0;
+  }
+  
+  .detail_box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .shop-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .shop-button:hover {
+    background-color: orange;
+  }
+  
+  
+  #page2 {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+    background-color: #dff7022d;
 
-.shop-button {
+  }
+  
+  #r1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .m {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fefefe;
+  }
+  
+  .h {
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ii {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .h6 {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  /* ===== ABOUT SECTION ===== */
+  #page3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #dff7022d;
+
+  }
+  
+  .p3 {
+    max-width: 500px;
+  }
+  
+  .p3 h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .p3 p {
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  .read {
     display: inline-block;
     margin-top: 20px;
     text-decoration: none;
@@ -96,57 +214,101 @@
     border-radius: 5px;
     font-weight: bold;
     transition: 0.3s;
-}
-
-.shop-button:hover {
-    background-color: gray;
-}
-
-#sm2 {
+  }
+  
+  .read:hover {
+    background-color: orange;
+  }
+  
+  .i1 img {
+    width: 350px;
+    border-radius: 10px;
+  }
+  
+  
+  #page4 {
     width: 100%;
-    height: 100vh;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    
-
-
-}
-.page2{
-    width: 100%;
-    height: 100vh;
-display: flex;
-justify-content: space-around;
-gap: 30px;
-margin-top: 20%;
-
-}
-.page2 div{
-    width: 25%;
-    height: 25%;
-    border: 2px solid black;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    
-    
-}
-.a1 h6 {
-    position: absolute;
-    font-size: 15px;
-    margin-right:18% ;
-    margin-bottom: 160px;
+    padding: 60px 30px;
+    background-color: #dff7022d;
+    text-align: center;
+  }
+  
+  .price h1 {
     text-transform: uppercase;
-    
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .jp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .d2 {
+    background-color: #fff;
+    width: 260px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+  }
+  
+  .d2:hover {
+    transform: translateY(-5px);
+  }
+  
+  .a1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .r2 {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .r3 {
+    font-size: 24px;
     color: orange;
+    margin: 10px 0;
+  }
+  
+  .r4 {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: 0.3s;
+  }
+  
+  .r4:hover {
+    color: orange;
+    font-size: 18px;
+  }
+  .see-more-container {
+    margin-top: 40px; /* jitna niche le jaana ho, utna value badhao */
+    text-align: center;
+  }
+  
+  .see {
     
-}
-.a1 h5{
-
-    font-size: 15px;
-    margin-top: 70%;
-
-
-}
-
-
+    text-decoration: none;
+    
+    font-weight: bold;
+    color: #fff;
+    background-color:  #000;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  .see:hover{
+    color: #f7c202;
+  }
+  
+  
+  
+  
