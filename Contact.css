@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  #headpart {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #222;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .s1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .s1 img {
+    width: 40px;
+    height: 35px;
+  }
+  
+  .s1 h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #f7a902ef;
+  }
+  
+  #headpart nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  #headpart nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  #headpart nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  #headpart nav ul li a:hover {
+    color: #f7c202;
+    font-size: 19px;
+  }
+  
+  #headpart nav img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+  #cont {
+    max-width: 600px;
+    margin: auto;
+    padding: 75px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    
+  
+  }
+  
+  .cd h1 {
+    font-size: 32px;
+    
+    color: #222;
+  
+  }
+  
+   
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  
+  
+  
+  
+  form button {
+    background-color: #f7a902ef;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    
+  }
+  
+  form button:hover {
+    background-color: #0c0c0c;
+  }
+  
